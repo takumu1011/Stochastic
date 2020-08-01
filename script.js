@@ -39,6 +39,10 @@ window.addEventListener('DOMContentLoaded', () => {
   }
   function draw() {
     console.log('draw');
+    window.scrollTo({
+      top: 100,
+      behavior: 'smooth',
+    });
     const drawNum = Math.floor(Math.random() * pbNum);
     hitOut.innerHTML = `当たりの番号は<span class="hitNum">${hitNum}</span>`;
     let li = document.createElement('li');

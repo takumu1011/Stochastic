@@ -1,3 +1,14 @@
+@keyframes line_under {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
 html {
   touch-action: manipulation;
 }
@@ -53,20 +64,6 @@ html {
   height: 2px;
   background-color: #ffff00;
   animation: line_under 3s linear 0s infinite;
-}
-@keyframes line_under {
-  0% {
-    transform: translateX(-100%);
-  }
-  50% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-}
-
-.draw {
 }
 .drawBtn {
   position: relative;
@@ -217,7 +214,6 @@ html {
   font-size: 24px;
   font-weight: bold;
 }
-
 .reset {
   position: fixed;
   bottom: 0;

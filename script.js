@@ -23,9 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
   function reset() {
     location.reload();
   }
-
   function choice() {
-    console.log('choice');
     const choiceNum = parseInt(document.getElementById('choiceNum').value);
     if (typeof choiceNum === 'number' && isNaN(choiceNum) === false) {
       pbNum = choiceNum;
@@ -38,7 +36,6 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   }
   function draw() {
-    console.log('draw');
     window.scrollTo({
       top: 100,
       behavior: 'smooth',
@@ -66,7 +63,6 @@ window.addEventListener('DOMContentLoaded', () => {
     <span class="drawNum">${drawNum}</span>`;
     real();
   }
-
   function invalidate() {
     choiceBtn.disabled = true;
     choiceBtn.classList.add('disabled');

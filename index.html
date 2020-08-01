@@ -5,10 +5,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <script src="script.js"></script>
+  <div class="choice">
+    <input id="choiceNum" class="choiceNum" type="text" placeholder="整数で当選確率を入力してください">
+    <button id="choiceBtn" class="choiceBtn">確率決定</button>
+  </div>
+  <p id="choiceOut" class="choiceOut">当選確率を決めてください</p>
+  <div class="reset">
+    <button id="resetBtn" class="resetBtn">リセット</button>
+  </div>
+  <div class="fix">
+    <p id="drawNumOut" class="drawNumOut"></p>
+  </div>
+  <div class="draw">
+    <button id="drawBtn" class="drawBtn">
+      <span class="drawBtn__txt">抽選する</span>
+    </button>
+    <p id="judgeTxt" class="judgeTxt"></p>
+    <p id="hitCountOut" class="hitCountOut"></p>
+    <p id="realOut" class="realOut"></p>
+    <p id="hitOut" class="hitOut"></p>
+    <ul id="drawOut" class="drawOut">
+    </ul>
+  </div>
+
+
+  <script src=" script.js"></script>
 </body>
 
 </html>
